@@ -1,0 +1,24 @@
+What I adjusted 
+In main: I added tests with different numbers of checkers (3, 5, and 7) to make it quicker to do multiple tests.
+In processResults: I added calculations for the maximum wait time, average number of items per shopper, and average shopping time. These give more detailed insights into the simulation results.
+In processResults: I added a check for division by zero to avoid errors when calculating averages if there are no shoppers processed.
+
+
+Summary of Results:
+I did 3 different tests for a random mix of (5,100) items per customer. Below are the results written in an easier way to read
+Test 1 (3 Checkers): 0 waiting customers. Wait time was 7.90 minutes with 47 items per shopper on average. Checkers were idle for 149 minutes.
+Test 1 (5 Checkers): 0 waiting customers. Wait time dropped to 5.17 minutes with 46 items per shopper. Idle time increased to 506 minutes.
+Test 1 (7 Checkers): 0 waiting customers. Wait time stayed low at 5.19 minutes with 46 items per shopper. Idle time was the highest at 847 minutes.
+Test 2 (3 Checkers): 14 waiting customers. Wait time increased to 17.10 minutes with 60 items per shopper. Idle time was 119 minutes.
+Test 2 (5 Checkers): 0 waiting customers. Wait time dropped to 5.45 minutes with 48 items per shopper. Idle time increased to 490 minutes.
+Test 2 (7 Checkers): 0 waiting customers. Wait time was 5.80 minutes with 52 items per shopper. Idle time was 826 minutes.
+Test 3 (3 Checkers): 5 waiting customers. Wait time was 10.83 minutes with 53 items per shopper on average. Idle time was 111 minutes.
+Test 3 (5 Checkers): 0 waiting customers. Wait time dropped to 5.33 minutes with 46 items per shopper. Idle time increased to 507 minutes.
+Test 3 (7 Checkers): 0 waiting customers. Wait time was 6.05 minutes with 55 items per shopper. Idle time was 797 minutes.
+
+Conclusion:
+Increasing the number of checkers reduces wait times but leads to higher idle times. 
+3 checkers result in longer wait times and had waiting customers but the checkers remain busy
+5 checkers balance wait times and idle time fairly well. no waiting customers
+7 checkers minimize wait times but cause the most idle time.No waiting customers
+An ideal amount of checkers to minimize wait times, idle times, and waiting customers for 5-100 items per shopper would be 5 checkers
